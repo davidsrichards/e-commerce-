@@ -1,0 +1,8 @@
+.all {
+  background: linear-gradient(to right, crimson 0%, blue 100%);
+}
+
+.white {
+  background: #fff;
+  border: 1px solid;
+}

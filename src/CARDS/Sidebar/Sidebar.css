@@ -1,0 +1,19 @@
+.sidebar-container {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  top: 8%;
+  left: 3%;
+  border-right: 1px solid hsl(0, 0%, 80%);
+  height: 100vh;
+  padding: 20px 0px;
+  align-items: center;
+  justify-content: start;
+}
+
+.sidebar-inner-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 190%;
+}
