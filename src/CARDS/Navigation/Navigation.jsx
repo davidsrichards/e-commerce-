@@ -38,12 +38,14 @@ function Navigation({ query, handleInputChange }) {
           <FaHome className="fa ic" />
 
           <div className="ic">
-            <div
-              className="border -mt-1 px-2.5 h-9 flex items-center rounded-full bg-black text-white"
-              onClick={() => navigate("cart")}
-            >
-              {count}
-            </div>
+            {count !== 0 && (
+              <div
+                className="-mt-1 text-[17px] w-6 h-[1.4rem] pt-[-15px] justify-center absolute items-center rounded-full text-white right-[1.1rem] top-[-10px] bg-orange-300 text-center font-mono"
+                onClick={() => navigate("cart")}
+              >
+                {count}
+              </div>
+            )}
             <FaUser className="user mr" />
             <FaShoppingCart className="cart mr" />
           </div>

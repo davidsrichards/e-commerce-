@@ -169,72 +169,82 @@ function RegistrationPage() {
 
   return (
     <>
-      <div className="card">
-        <div className="card-image"></div>
+      <div className="card grid lg:grid-cols-2 grid-cols-1 w-[30rem] lg:w-[50rem] ">
+        <div className="card-image lg:block hidden"></div>
         <form>
           {/* Input Group */}
-          <input
-            type="text"
-            placeholder="First Name"
-            onChange={handleFirstName}
-            value={firstName}
-          />
-          <p className="error" style={{ color: firstNameColor }}>
-            {firstNameError}
-          </p>
+          <div className="p-4 first:pt-0 last:pb-0 ">
+            <input
+              type="text"
+              placeholder="First Name"
+              onChange={handleFirstName}
+              value={firstName}
+              className=""
+            />
+            <p className="error" style={{ color: firstNameColor }}>
+              {firstNameError}
+            </p>
 
-          <input
-            type="text"
-            placeholder="Last Name"
-            onChange={handleLastName}
-            value={lastName}
-          />
-          <p className="error" style={{ color: lastNameColor }}>
-            {lastNameError}
-          </p>
+            <input
+              type="text"
+              placeholder="Last Name"
+              onChange={handleLastName}
+              value={lastName}
+            />
+            <p className="error" style={{ color: lastNameColor }}>
+              {lastNameError}
+            </p>
 
-          <input
-            type="email"
-            placeholder="Email"
-            onChange={handleEmail}
-            value={email}
-          />
-          <p className="error" style={{ color: emailColor }}>
-            {emailError}
-          </p>
+            <input
+              type="email"
+              placeholder="Email"
+              onChange={handleEmail}
+              value={email}
+            />
+            <p className="error" style={{ color: emailColor }}>
+              {emailError}
+            </p>
 
-          <input
-            type="text"
-            placeholder="Phone"
-            onChange={handlePhone}
-            value={phone}
-          />
-          <p className="error" style={{ color: phoneColor }}>
-            {phoneError}
-          </p>
+            <input
+              type="text"
+              placeholder="Phone"
+              onChange={handlePhone}
+              value={phone}
+            />
+            <p className="error" style={{ color: phoneColor }}>
+              {phoneError}
+            </p>
 
-          <input
-            type="password"
-            placeholder="Password"
-            onChange={handlePassword}
-            value={password}
-          />
-          <p className="error" style={{ color: passwordColor }}>
-            {passwordError}
-          </p>
+            <input
+              type="password"
+              placeholder="Password"
+              onChange={handlePassword}
+              value={password}
+            />
+            <p className="error" style={{ color: passwordColor }}>
+              {passwordError}
+            </p>
 
-          <input
-            type="password"
-            placeholder="Confirm Password"
-            onChange={handleConfirmPassword}
-            value={confirmPassword}
-          />
-          <p className="error" style={{ color: confirmPasswordColor }}>
-            {confirmPasswordError}
-          </p>
+            <input
+              type="password"
+              placeholder="Confirm Password"
+              onChange={handleConfirmPassword}
+              value={confirmPassword}
+            />
+            <p className="error" style={{ color: confirmPasswordColor }}>
+              {confirmPasswordError}
+            </p>
+          </div>
           {/* Input Group */}
-          <button onClick={() => validateData(event)}>Submit</button>
-          <a href="#">{ancho}</a>
+          <button
+            onClick={() => validateData(event)}
+            className="relative top-4 bg-blue-400 hover:bg-blue-500 w-[20rem] h-10 rounded-lg font-bold font-serif text-xl text-white"
+          >
+            Submit
+          </button>
+          <a href="#" className="hover:text-red-500">
+            {ancho}
+          </a>
         </form>
       </div>
     </>

@@ -1,21 +1,21 @@
-body {
+/* body {
   background: linear-gradient(
     to right,
     rgb(0, 225, 255) -0%,
     rgb(8, 79, 145) 100%
   );
-}
+} */
 
-.login-card {
+/* .login-card {
   background: rgb(218, 184, 172);
   align-items: center;
   justify-content: center;
   display: flex;
   padding: 100px 100px;
   border-radius: 10px;
-}
+} */
 
-.login-card form input {
+/* .login-card form input {
   padding: 10px 50px;
   margin: 5px 0px;
   border-radius: 10px;
@@ -33,9 +33,9 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
+} */
 
-.login-card form button {
+/* .login-card form button {
   position: relative;
   top: 1rem;
   border-radius: 10px;
@@ -48,14 +48,14 @@ body {
   color: white;
   cursor: pointer;
   width: 100%;
-}
+} */
 
-.login-card form a {
+/* .login-card form a {
   position: relative;
   top: 2.5rem;
   text-decoration-line: none;
   font-family: sans-serif;
-}
+} */
 
 .login-card .error {
   color: red;

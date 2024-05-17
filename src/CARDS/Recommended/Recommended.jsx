@@ -8,8 +8,10 @@ import "./Recommended.css";
 function Recommended({ handleClick }) {
   return (
     <>
-      <section className="fixed top-9 mt-6 z-50 bg-sky-500 w-full flex flex-col items-center justify-center">
-        <h1 className="recommended-title text-xl font-bold">Recommended</h1>
+      <section className="fixed top-9 mt-6 z-50 bg-sky-300 flex  w-full flex-col items-center justify-center">
+        <h1 className="recommended-title text-2xl font-sans font-normal pb-2">
+          Recommended
+        </h1>
         <div className="btns">
           <Buttons title="All Wears" value="" handleClick={handleClick} />
 

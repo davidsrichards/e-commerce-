@@ -25,7 +25,7 @@ function ProductCard({ img, title, newPrice, prevPrice, reviews, star }) {
     if (count < 9) {
       newPrice = Number(newPrice);
       setCount(count + 1);
-      const newObject = { image: img, titles: title };
+      const newObject = { image: img, titles: title, price: newPrice };
       setCartObject((c) => [...c, newObject]);
       setTotalPrice((p) => p + newPrice);
 
@@ -47,7 +47,7 @@ function ProductCard({ img, title, newPrice, prevPrice, reviews, star }) {
             <div className="price">
               $<del>{prevPrice}</del> {newPrice}.00
               {/*  */}
-              <button className="add bg-yellow-300" onClick={IncrementItems}>
+              <button className="add bg-yellow-400" onClick={IncrementItems}>
                 Add
               </button>
             </div>
